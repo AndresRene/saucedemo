@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="31.223">
+    <testcase classname="Validate Login Credentials" name="Verify that a valid user can sign in" time="8.841">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user goes to the webpage................................................passed
+When user enters standard_user and secret_sauce.............................passed
+And clicks on login button..................................................passed
+Then user is navigated to the shop page.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Login Credentials" name="Verify that a in-valid users cannot sign in" time="7.011">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user goes to the webpage................................................passed
+When user enters locked_out_user and secret_sauce...........................passed
+And clicks on login button..................................................passed
+Then user is not able to enter to the shop page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Login Credentials" name="Verify that a in-valid users cannot sign in 2" time="7.406">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user goes to the webpage................................................passed
+When user enters prueba and 12345...........................................passed
+And clicks on login button..................................................passed
+Then user is not able to enter to the shop page.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Buy In the Shop" name="Buy the maximun and the minimum price item of the store" time="7.704">
+        <system-out><![CDATA[Given browser is open.......................................................passed
+And user goes to the webpage................................................passed
+When user enters standard_user and secret_sauce.............................passed
+And clicks on login button..................................................passed
+Then user select the max and min price item.................................passed
+And clicks on the shopping cart.............................................passed
+Then click on checkout......................................................passed
+Then enters Pedro Probador 101101...........................................passed
+And click on continue.......................................................passed
+Then See the summary and click on finish....................................passed
+And the order is complete...................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
