@@ -3,7 +3,7 @@
 #Description: Set de pruebas para  probar el correcto funcionamiento de las historias de usuario del sitio  https://www.saucedemo.com/
 Feature: Buy In the Shop
 
-  Scenario Outline: Buy the maximun and the minimum price item of the store
+  Scenario Outline: Buy the maximum and the minimum price item of the store
     Given browser is open
     And user goes to the webpage
     When user enters standard_user and secret_sauce
